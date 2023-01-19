@@ -14,4 +14,9 @@ Install Windows 10 ISO, Server 2019 and Oracle Virtual Box. Make sure to pick th
 Windows 10 ISO and Server 2019 both come with extensions you have to download as well for them to operate.
 
 <h2>Step 2: Create the Server 2019 Computer First:</h2>
-Open Virtual Box and name it something simple such as "dc" for domain controller and choose the windows 64-bit option and continue. Decide on the proper amount of RAM (depending on your device specs). Once done, go ahead and create the disk with the defaults. 
+Open Virtual Box and name it something simple such as "dc" for domain controller and choose the windows 64-bit option and continue. Decide on the proper amount of RAM (depending on your device specs). Once done, go ahead and create the disk with the default settings. 
+<p align = center><img src = "Create Server 2019.png" height="50%" width="50%"></p>
+
+<h2> Side Notes </h2>
+To make navigating the virtual machine a bit easier you can adjust "Advanced Settings" such as:
+<li><i> Share Clipboard & Drag'nDrop
