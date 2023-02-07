@@ -13,13 +13,15 @@
 Install Windows 10 ISO, Server 2019 and Oracle Virtual Box. Make sure to pick the appropriate version for your device!
 Windows 10 ISO and Server 2019 both come with extensions you have to download as well for them to operate.
 
-<h2>Step 2: Create the Server 2019 Computer First:</h2>
+<h2>Step 2: Install Windows Server on VirtualBox:</h2>
 Open Virtual Box and name it something simple such as "dc" for domain controller and choose the windows 64-bit option and continue. Decide on the proper amount of RAM you want to dedicate to the server (depending on your device specs). Once done, go ahead and create the disk with the default settings. Select your server & click on settings, from there select storage and choose the <b>Windows ISO file</b>. You must also change Network settings so that this VM is able to connect to you home/work internet. To do that head to 'Network'->'Adapter 1' ->'Attached to:' & select <b>Internal Network</b>. Now that your RVM is configured you can go boot it up and install the windows server installation.
-<p align = left><img src = "Create Server 2019.png" height="50%" width="50%"></p><p align = center><img src = "_internalnetwork.jpeg" height="50%" width="50%"></p>
+<p align = left><img src = "Create Server 2019.png" height="40%" width="40%"></p><p align = center><img src = "_internalnetwork.jpeg" height="40%" width="40%"></p><p align = right><img src = "_windowsiso.jpeg" height="40%" width="40%"></p>
 
-<h2> Side Notes </h2>
+<h4> Side Notes </h4>
 To make navigating the virtual machine a bit easier you can adjust "Advanced Settings" such as:
 <li><i> Share Clipboard & Drag'nDrop</li></i>
 <h6><i> **Switching these to 'bidirectional' will help your VM run smoother**</i></h6>
+
+<h2>Step 3: Boot up the VM and install Windows server</h2>
 
 
