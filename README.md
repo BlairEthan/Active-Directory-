@@ -9,19 +9,16 @@
 <li><a href="https://www.microsoft.com/en-us/software-download/windows10ISO"> Windows 10 ISO</li></a>
 <li>Powershell</li>
 
-<h2>Step 1: Installation</h2>
-Install Windows 10 ISO, Server 2019 and Oracle Virtual Box. Make sure to pick the appropriate version for your device!
-Windows 10 ISO and Server 2019 both come with extensions you have to download as well for them to operate.
 
-<h2>Step 2: Install Windows Server on VirtualBox:</h2>
-Open Virtual Box and name it something simple such as "dc" for domain controller and choose the windows 64-bit option and continue. Decide on the proper amount of RAM you want to dedicate to the server (depending on your device specs). Once done, go ahead and create the disk with the default settings. Select your server & click on settings, from there select storage and choose the <b>Windows ISO file</b>. You must also change Network settings so that this VM is able to connect to you home/work internet. To do that head to 'Network'->'Adapter 1' ->'Attached to:' & select <b>Internal Network</b>. Now that your RVM is configured you can go boot it up and install the windows server installation.
-<p align = left><img src = "Create Server 2019.png" height="40%" width="40%"></p><p align = center><img src = "_internalnetwork.jpeg" height="40%" width="40%"></p><p align = right><img src = "_windowsiso.jpeg" height="40%" width="40%"></p>
-
-<h4> Side Notes </h4>
-To make navigating the virtual machine a bit easier you can adjust "Advanced Settings" such as:
-<li><i> Share Clipboard & Drag'nDrop</li></i>
-<h6><i> **Switching these to 'bidirectional' will help your VM run smoother**</i></h6>
-
-<h2>Step 3: Boot up the VM and install Windows server</h2>
+<h2> Step 1 <h2>Choose a physical or virtual machine to install Windows Server on. Make sure it meets the system requirements for Windows Server.
+<h2> Step 2 <h2>Install Windows Server on the machine.
+<h2> Step 3 <h2>Configure a static IP address for the machine. You can do this by going to Control Panel > Network and Sharing Center > Change adapter settings > right-click on your network adapter > Properties > Internet Protocol Version 4 (TCP/IPv4) > Properties. Enter the IP address, subnet mask, default gateway, and DNS server addresses.
+<h2> Step 4 <h2>Rename the machine to a unique name that you will use to identify it in your lab.
+<h2> Step 5 <h2>Install Active Directory Domain Services (AD DS) on the machine. You can do this by opening Server Manager > Add Roles and Features > Role-based or feature-based installation > select the server > select Active Directory Domain Services.
+<h2> Step 6 <h2>Once AD DS is installed, open the Active Directory Domain Services Configuration Wizard. You can do this by clicking on the yellow exclamation mark in the Server Manager dashboard, or by opening Server Manager > Tools > Active Directory Domain Services Configuration Wizard.
+<h2> Step 7 <h2>Follow the prompts in the wizard to configure the domain name and NetBIOS name. You can use a domain name that you own, or a domain name that you create specifically for your lab. Make sure the domain name is unique and does not conflict with any existing domain names on the internet.
+<h2> Step 8 <h2>Once the wizard is complete, you will have a new Active Directory domain running on your machine. You can use Active Directory Users and <h2> Step 9 <h2>Computers to create user accounts, group policies, and other Active Directory objects.
+<h2> Step 10 <h2>Create a test user account and a test group, and assign the user account to the group.
+<h2> Step 11 <h2>Join a client computer to the domain. You can do this by opening Control Panel > System > Change settings > Change > select "Domain" > enter the domain name you created in step 7 > enter the credentials of a domain administrator account.
 
 
