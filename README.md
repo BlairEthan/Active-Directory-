@@ -21,4 +21,4 @@
 <h2> Step 10 <h2>Create a test user account and a test group, and assign the user account to the group.
 <h2> Step 11 <h2>Join a client computer to the domain. You can do this by opening Control Panel > System > Change settings > Change > select "Domain" > enter the domain name you created in step 7 > enter the credentials of a domain administrator account.
 
-
+<img src="Active Direct..png" height="50%" width="50%" />
